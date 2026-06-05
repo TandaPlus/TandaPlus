@@ -1,0 +1,19 @@
+pre-commit:
+  commands:
+    analyze-backend:
+      root: "backend/"
+      run: dart analyze
+    analyze-frontend:
+      root: "frontend/"
+      run: flutter analyze
+    format-backend:
+      root: "backend/"
+      run: dart format --set-exit-if-changed .
+    format-frontend:
+      root: "frontend/"
+      run: dart format --set-exit-if-changed .
+
+commit-msg:
+  commands:
+    validate-message:
+      run: dart run scripts/validate_commit.dart {1}
