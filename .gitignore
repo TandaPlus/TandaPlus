@@ -1,0 +1,8 @@
+# Node (SonarQube scanner local, no es parte del stack del proyecto)
+node_modules/
+package-lock.json
+package.json
+frontend/node_modules/
+frontend/package-lock.json
+frontend/package.json
+frontend/.scannerwork/
