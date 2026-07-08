@@ -8,6 +8,7 @@ environment:
 
 dependencies:
   dart_frog: ^1.1.0
+  hashlib: ^2.4.2
   postgres: ^3.0.0  # Pool de conexiones via Singleton (ver lib/src/infrastructure/database/postgres_pool.dart)
 
 dev_dependencies:
